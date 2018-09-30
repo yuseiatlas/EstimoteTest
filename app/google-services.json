@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "350013192698",
+    "firebase_url": "https://estimotetest-d0cc7.firebaseio.com",
+    "project_id": "estimotetest-d0cc7",
+    "storage_bucket": "estimotetest-d0cc7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350013192698:android:f5ecb0d819cb9acb",
+        "android_client_info": {
+          "package_name": "com.example.yuseiatlas.estimotetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "350013192698-j57ts8o6q577hd5pp32rnko57cbrh71f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yuseiatlas.estimotetest",
+            "certificate_hash": "df913c11b79426df5e98287c5b6c99c5502bbdfa"
+          }
+        },
+        {
+          "client_id": "350013192698-cb6cevsd9fjcup51ceiue773p77shevt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCShp4Bjio3kwa0EdaT4HKj764gBPhvi8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "350013192698-cb6cevsd9fjcup51ceiue773p77shevt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

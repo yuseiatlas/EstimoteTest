@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    packagingOptions {
+        exclude 'META-INF/androidx.versionedparcelable_versionedparcelable.version'
+        exclude 'META-INF/androidx.core_core.version'
+        exclude 'META-INF/proguard/androidx-annotations.pro'
+    }
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.yuseiatlas.estimotetest"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    // ktx
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
+    implementation('androidx.core:core-ktx:1.0.0') {
+        exclude group: 'com.android.support', module: 'support-v4'
+
+    }
+
+    // Firebase
+    implementation 'com.google.firebase:firebase-crash:16.2.0'
+    implementation 'com.google.firebase:firebase-core:16.0.3'
+
+    // Estimote
+    implementation('com.estimote:indoorsdk:3.0.0-beta-03') {
+        exclude group: 'com.android.support', module: 'support-v4'
+
+    }
+    implementation('com.estimote:google-maps-renderer:3.0.0-beta-03') {
+        exclude group: 'com.android.support', module: 'support-v4'
+
+    }
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
+}

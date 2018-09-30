@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Estimote test</string>
+    <string name="asset_id">06858599-688e-4976-86d2-58eaaa5c710f</string>
+    <string name="location_id">4d4b9293-fa6f-496b-b952-2b8434ca5000</string>
+    <string name="log_text">%1s\n%2s</string>
+    <string name="asset_id_hint">Enter Asset ID</string>
+    <string name="location_id_hint">Enter Location ID</string>
+</resources>
