@@ -53,6 +53,12 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-v4'
 
     }
+    implementation 'com.estimote:mustard:0.2.1'
+
+    // logging
+    implementation 'com.wojtek.wawerek:skald-kotlin:0.3.1'
+    implementation 'com.wojtek.wawerek:skald-logcat-plugin:0.1.0'
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
